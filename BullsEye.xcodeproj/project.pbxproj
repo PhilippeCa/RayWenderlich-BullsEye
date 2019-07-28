@@ -14,6 +14,8 @@
 		371FE05D22EDD4690002F799 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 371FE05B22EDD4690002F799 /* LaunchScreen.storyboard */; };
 		371FE06522EE034B0002F799 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371FE06422EE034B0002F799 /* AboutViewController.swift */; };
 		371FE06722EE04D10002F799 /* AboutAuthorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371FE06622EE04D10002F799 /* AboutAuthorViewController.swift */; };
+		371FE06922EE13530002F799 /* BullsEye.html in Resources */ = {isa = PBXBuildFile; fileRef = 371FE06822EE13530002F799 /* BullsEye.html */; };
+		371FE06C22EE163F0002F799 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 371FE06B22EE163F0002F799 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		371FE05E22EDD4690002F799 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		371FE06422EE034B0002F799 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		371FE06622EE04D10002F799 /* AboutAuthorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutAuthorViewController.swift; sourceTree = "<group>"; };
+		371FE06822EE13530002F799 /* BullsEye.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = BullsEye.html; sourceTree = "<group>"; };
+		371FE06B22EE163F0002F799 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				371FE06C22EE163F0002F799 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,7 @@
 			children = (
 				371FE05122EDD4680002F799 /* BullsEye */,
 				371FE05022EDD4680002F799 /* Products */,
+				371FE06A22EE163F0002F799 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,9 +71,18 @@
 				371FE06422EE034B0002F799 /* AboutViewController.swift */,
 				371FE05922EDD4690002F799 /* Assets.xcassets */,
 				371FE05B22EDD4690002F799 /* LaunchScreen.storyboard */,
+				371FE06822EE13530002F799 /* BullsEye.html */,
 				371FE05E22EDD4690002F799 /* Info.plist */,
 			);
 			path = BullsEye;
+			sourceTree = "<group>";
+		};
+		371FE06A22EE163F0002F799 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				371FE06B22EE163F0002F799 /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				371FE05D22EDD4690002F799 /* LaunchScreen.storyboard in Resources */,
+				371FE06922EE13530002F799 /* BullsEye.html in Resources */,
 				371FE05A22EDD4690002F799 /* Assets.xcassets in Resources */,
 				371FE05822EDD4680002F799 /* Main.storyboard in Resources */,
 			);
