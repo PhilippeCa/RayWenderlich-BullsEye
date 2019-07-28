@@ -23,7 +23,7 @@ class ViewController: UIViewController {
         let roundedValue = slider.value.rounded()
         currentValue = Int(roundedValue)
         
-        startNewRound()
+        startNewGame()
     }
     
     // MARK: - Storyboard
@@ -54,17 +54,21 @@ class ViewController: UIViewController {
         let message = "You scored \(points) points!"
         
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        let action = UIAlertAction(title: "Next round", style: .default, handler: nil)
+        let action = UIAlertAction(title: "Next round", style: .default, handler: { action in
+            self.startNewRound()
+        })
         
         alert.addAction(action)
         present(alert, animated: true, completion: nil)
-        
-        startNewRound()
     }
     
     @IBAction func sliderMoved(_ sender: UISlider) {
         let roundedValue = slider.value.rounded()
         currentValue = Int(roundedValue)
+    }
+    
+    @IBAction func startOver() {
+        startNewGame()
     }
     
     // MARK: - Game logic
@@ -82,5 +86,11 @@ class ViewController: UIViewController {
         targetLabel.text = String(targetValue)
         scoreLabel.text = String(score)
         roundLabel.text = String(round)
+    }
+    
+    private func startNewGame(){
+        score = 0
+        round = 0
+        startNewRound()
     }
 }
